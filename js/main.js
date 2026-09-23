@@ -102,42 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (galleryContainer) {
         // Ordered array: Industrial first, regular in middle, alcantarillas at the end.
         const allGalleryImages = [
-            'Foto de Edgar(10).jpg', // Industrial pump
-            'Foto de Edgar(23).jpg', // Electric panel / thermal
-            'Foto de Edgar(4).jpg',
-            'Foto de Edgar(5).jpg',
-            'Foto de Edgar(9).jpg',
-            'Foto de Edgar(11).jpg',
-            'Foto de Edgar(12).jpg',
-            'Foto de Edgar(13).jpg',
-            'Foto de Edgar(14).jpg',
-            'Foto de Edgar(15).jpg',
-            'Foto de Edgar(16).jpg',
-            'Foto de Edgar(17).jpg',
-            'Foto de Edgar(18).jpg',
-            'Foto de Edgar(19).jpg',
-            'Foto de Edgar(20).jpg',
-            'Foto de Edgar(21).jpg',
-            'Foto de Edgar(22).jpg',
-            'Foto de Edgar(24).jpg',
-            'Foto de Edgar(25).jpg',
-            'Foto de Edgar(26).jpg',
-            'Foto de Edgar(27).jpg',
-            'Foto de Edgar(28).jpg',
-            'Foto de Edgar(30).jpg',
-            'Foto de Edgar(31).jpg',
-            'Foto de Edgar(32).jpg',
-            'Foto de Edgar(33).jpg',
-            'Foto de Edgar(35).jpg',
-            'Foto de Edgar(36).jpg',
-            'Foto de Edgar(37).jpg',
-            'Foto de Edgar.jpg',
-            'Foto de Edgar(1).jpg',
-            'Foto de Edgar(2).jpg',
-            'Foto de Edgar(3).jpg',
-            'Foto de Edgar(6).jpg', // Alcantarillas
-            'Foto de Edgar(7).jpg', // Alcantarillas
-            'Foto de Edgar(8).jpg'  // Alcantarillas
+            'Gemini_Generated_Image_1zmmt11zmmt11zmm.jpg',
+            'Gemini_Generated_Image_4m6q9y4m6q9y4m6q.jpg',
+            'Gemini_Generated_Image_7i764r7i764r7i76.jpg',
+            'Gemini_Generated_Image_bp5klcbp5klcbp5k.jpg',
+            'Gemini_Generated_Image_e9berne9berne9be.jpg',
+            'Gemini_Generated_Image_psdvo2psdvo2psdv.jpg'
         ];
         
         let itemsLoaded = 0;
