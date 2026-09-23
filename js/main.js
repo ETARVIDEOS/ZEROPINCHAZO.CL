@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.style.transitionDelay = `${delay}s`;
                 
                 div.innerHTML = `
-                    <img src="./assets/FOTOS DE TRABAJOS/${imgName}" alt="Trabajo Hidroservice ${itemsLoaded + idx + 1}" class="gallery-img" loading="lazy">
+                    <img src="./assets/proyectos/${imgName}" alt="Trabajo ZeroPinchazo ${itemsLoaded + idx + 1}" class="gallery-img" loading="lazy">
                     <div class="gallery-overlay">
                         <h4 class="text-white font-bold">Intervención Sanitaria</h4>
                     </div>

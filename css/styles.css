@@ -1,7 +1,7 @@
 :root {
     /* Premium Dark Theme Palette */
-    --bg-dark: #050b14;
-    --bg-dark-soft: #0a1320;
+    --bg-dark: #000000;
+    --bg-dark-soft: #111111;
     --glass-bg: rgba(255, 255, 255, 0.02);
     --glass-border: rgba(255, 255, 255, 0.05);
     
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-accent { color: var(--accent); }
 .text-body { color: var(--text-body); }
 .text-white { color: var(--text-light); }
-.text-blue { color: var(--blue); }
+.text-blue { color: #111; }
 .text-purple { color: var(--purple); }
 
 .text-transparent { color: transparent; }
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-accent { background-color: var(--accent); }
 .text-dark { color: var(--bg-dark); }
 .bg-accent-soft { background-color: var(--accent-soft); }
-.bg-blue-soft { background-color: var(--blue-soft); }
+.bg-blue-soft { background-color: rgba(17,17,17,0.1); }
 .bg-purple-soft { background-color: var(--purple-soft); }
 
 .grid { display: grid; }
@@ -231,8 +231,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 40px;
-    border-radius: 50%;
+    height: 80px;
+    max-height: 100px;
+    border-radius: 0;
+    object-fit: contain;
 }
 
 .logo-main {
@@ -1198,7 +1200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gr-card-stars { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
 .gr-star { color: #F59E0B; font-size: 1.1rem; }
-.gr-verified { font-size: 0.7rem; color: #3b82f6; border: 1px solid #3b82f6; padding: 2px 6px; border-radius: 12px; font-weight: bold; }
+.gr-verified { font-size: 0.7rem; color: #222222; border: 1px solid #222222; padding: 2px 6px; border-radius: 12px; font-weight: bold; }
 
 .gr-text {
     font-size: 0.85rem;
