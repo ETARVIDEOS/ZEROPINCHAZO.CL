@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.innerHTML = `
                     <img src="./assets/proyectos/${imgName}" alt="Trabajo ZeroPinchazo ${itemsLoaded + idx + 1}" class="gallery-img" loading="lazy">
                     <div class="gallery-overlay">
-                        <h4 class="text-white font-bold">Intervención Sanitaria</h4>
+                        <h4 class="text-white font-bold">Asistencia vehicular en terreno</h4>
                     </div>
                 `;
                 galleryContainer.appendChild(div);
