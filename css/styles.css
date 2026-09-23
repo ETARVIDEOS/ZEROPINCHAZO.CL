@@ -202,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
     position: fixed;
     top: 0;
+    overflow: visible;
     width: 100%;
     z-index: 100;
     padding: 20px 0;
@@ -219,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-container {
     display: flex;
+    overflow: visible;
     justify-content: space-between;
     align-items: center;
 }
@@ -316,6 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-content-wrapper {
     position: relative;
+    margin-top: 150px;
     z-index: 10;
     width: 100%;
 }
