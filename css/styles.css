@@ -233,10 +233,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 240px;
-    max-height: 240px;
-    border-radius: 0;
+    height: 100px;
+    width: auto;
+    transform: scale(2.2);
+    transform-origin: center;
     object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 70px;
+        transform: scale(2.0);
+    }
 }
 
 .logo-main {
