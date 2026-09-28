@@ -1243,3 +1243,48 @@ h1, h2, h3, h4, h5, h6 {
     100% { transform: rotate(360deg); }
 }
 
+
+/* ---- LOGO OVERRIDES ---- */
+.logo-img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+/* Header Logo */
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 60px !important; /* Move text to the right to avoid overlap with scaled image */
+    text-decoration: none;
+}
+.logo-group .logo-img {
+    transform: scale(2.6);
+    margin-left: 30px;
+}
+
+/* Footer Logo */
+.footer-brand .logo-img {
+    height: 120px;
+    transform: scale(3.5);
+    margin-left: 60px; /* Push it right so it doesn't bleed off the left edge */
+}
+
+@media (max-width: 768px) {
+    .logo-group {
+        gap: 40px !important;
+    }
+    .logo-group .logo-img {
+        height: 70px;
+        transform: scale(2.4);
+        margin-left: 10px;
+    }
+    
+    .footer-brand .logo-img {
+        height: 100px;
+        transform: scale(3.0);
+        margin-left: 40px;
+    }
+}
