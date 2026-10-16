@@ -1294,6 +1294,11 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
     font-size: 0.75em;
     font-weight: 700;
+    color: var(--accent);
+    background-image: linear-gradient(to right, #ff6b35, #ffb235);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -1320,6 +1325,11 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.35rem;
         line-height: 1.3;
         margin-top: 6px;
+        color: var(--accent);
+        background-image: linear-gradient(to right, #ff6b35, #ffb235);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .hero-subtitle-wrapper {
