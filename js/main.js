@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Typing Effect
     const typingContainer = document.getElementById('typing-text');
     if (typingContainer) {
-        const text = "Soluciones Integrales en Vulcanización Móvil y Auxilio de Baterías en Terreno.";
+        const text = "Llegamos en 30 minutos a todas las comunas de Santiago. Atención inmediata en ruta y domicilio.";
         let index = 0;
         
         const typeText = () => {

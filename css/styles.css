@@ -1351,3 +1351,29 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+/* ---- CAMBIOS 25.10.2026 ---- */
+/* Cinta de comunas dentro del hero, bajo el menu y sobre la insignia */
+.hero-marquee {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 118px;
+    z-index: 5;
+    padding: 10px 0;
+    width: 100%;
+}
+.hero-marquee .marquee-track span { font-size: 1rem; letter-spacing: 1.5px; }
+
+/* El subtitulo es mas largo: permitir dos lineas sin cortar */
+.hero-subtitle-wrapper { height: auto; min-height: 3rem; }
+
+@media (max-width: 768px) {
+    .hero-marquee { top: 96px; padding: 8px 0; }
+    .hero-marquee .marquee-track span { font-size: 0.85rem; letter-spacing: 1px; }
+    .hero { padding-top: 150px; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-subtitle-wrapper { min-height: 5.2rem; align-items: flex-start; }
+    /* WhatsApp flotante 40px mas arriba para no tapar "LLAMAR AHORA" */
+    .whatsapp-float { bottom: 80px; }
+}
