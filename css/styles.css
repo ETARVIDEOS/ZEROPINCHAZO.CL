@@ -1375,5 +1375,5 @@ h1, h2, h3, h4, h5, h6 {
     .hero-title { font-size: 2.2rem; }
     .hero-subtitle-wrapper { min-height: 5.2rem; align-items: flex-start; }
     /* WhatsApp flotante 40px mas arriba para no tapar "LLAMAR AHORA" */
-    .whatsapp-float { bottom: 320px; right: 20px; }
+    .whatsapp-float { bottom: 225px; right: 20px; }
 }
