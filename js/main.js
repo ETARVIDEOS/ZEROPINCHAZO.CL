@@ -175,4 +175,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+// 9. Mobile Floating WhatsApp visibility (Only visible from 'Quiénes somos' onwards)
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    const nosotrosSection = document.getElementById('nosotros');
+
+    if (whatsappFloat && nosotrosSection) {
+        const checkWhatsAppVisibility = () => {
+            if (window.innerWidth <= 768) {
+                const rect = nosotrosSection.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.65) {
+                    whatsappFloat.classList.add('visible-mobile');
+                } else {
+                    whatsappFloat.classList.remove('visible-mobile');
+                }
+            } else {
+                whatsappFloat.classList.remove('visible-mobile');
+            }
+        };
+
+        window.addEventListener('scroll', checkWhatsAppVisibility, { passive: true });
+        window.addEventListener('resize', checkWhatsAppVisibility);
+        checkWhatsAppVisibility();
+    }
 });

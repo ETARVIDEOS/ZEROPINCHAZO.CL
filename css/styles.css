@@ -170,6 +170,20 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-4px);
 }
 
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #ffffff !important;
+    border: 2px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    border-color: #20ba5a;
+    color: #ffffff !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.45);
+}
+
 .btn-glow {
     position: relative;
 }
@@ -1374,6 +1388,20 @@ h1, h2, h3, h4, h5, h6 {
     .hero { padding-top: 150px; }
     .hero-title { font-size: 2.2rem; }
     .hero-subtitle-wrapper { min-height: 5.2rem; align-items: flex-start; }
-    /* WhatsApp flotante 40px mas arriba para no tapar "LLAMAR AHORA" */
-    .whatsapp-float { bottom: 225px; right: 20px; }
+    /* WhatsApp flotante en mobile: solo aparece al avanzar hasta Quienes somos */
+    .whatsapp-float {
+        bottom: 25px;
+        right: 20px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(20px) scale(0.85);
+        transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    }
+    .whatsapp-float.visible-mobile {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0) scale(1);
+    }
 }
